@@ -8,8 +8,6 @@ from bson import ObjectId
 from django.http import JsonResponse, HttpResponseBadRequest
 
 
-
-
 class ResumeDataView(APIView):
     def get(self, request):
         resume_id = request.GET.get("resume_id",None)
